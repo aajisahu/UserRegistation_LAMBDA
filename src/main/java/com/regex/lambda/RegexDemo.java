@@ -1,4 +1,5 @@
 package com.regex.lambda;
+
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,6 +20,7 @@ public class RegexDemo {
         System.out.println("Enter password");
         regexDemo.password();
     }
+
     public void firstName() {
         String input = sc.next();
         String regex = "^[A-Z]{1}[a-z]{2,}$";

@@ -1,8 +1,8 @@
 package com.regex.lambda;
 public class UserValidationException extends Exception {
-	String message;
+    String message;
 
-	public UserValidationException(String message) {
-		this.message = message;
-	}
+    public UserValidationException(String message) {
+        this.message = message;
+    }
 }
