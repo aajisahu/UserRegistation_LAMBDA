@@ -8,7 +8,7 @@ public class UserValidationTest {
         UserValidation validation = new UserValidation();
         boolean actualResult = true;
         try {
-            actualResult = validation.firstNameValidation("Manish");
+            actualResult = validation.firstNameValidation("Ashish");
         } catch (UserValidationException exception) {
             Assert.assertEquals(actualResult, exception.message);
         }
@@ -30,7 +30,7 @@ public class UserValidationTest {
         UserValidation validation = new UserValidation();
         boolean actualResult = true;
         try {
-            actualResult = validation.emailValidation("mkaubr007@gmail.com");
+            actualResult = validation.emailValidation("mkgandhi007@gmail.com");
         } catch (UserValidationException exception) {
             Assert.assertEquals(actualResult, exception);
         }
@@ -41,7 +41,7 @@ public class UserValidationTest {
         UserValidation validation = new UserValidation();
         boolean actualResult = true;
         try {
-            actualResult = validation.phoneNumberValidation("+918002695700");
+            actualResult = validation.phoneNumberValidation("+91888269570");
         } catch (UserValidationException exception) {
             Assert.assertEquals(actualResult, exception.message);
         }
