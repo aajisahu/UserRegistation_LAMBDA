@@ -14,7 +14,7 @@ public class UserValidation {
             };
             return obj.validate(firstName);
 
-        } catch (NullPointerException exception) {
+        } catch (Exception exception) {
             throw new UserValidationException("Invalid input");
         }
     }
@@ -29,7 +29,7 @@ public class UserValidation {
             };
             return obj.validate(lastName);
 
-        } catch (NullPointerException exception) {
+        } catch (Exception exception) {
             throw new UserValidationException("Invalid input");
         }
     }
@@ -43,7 +43,7 @@ public class UserValidation {
                 return matcher.matches();
             };
             return obj.validate(email);
-        } catch (NullPointerException exception) {
+        } catch (Exception exception) {
             throw new UserValidationException("Invalid input");
         }
     }
@@ -57,7 +57,7 @@ public class UserValidation {
                 return matcher.matches();
             };
             return obj.validate(phoneNumber);
-        } catch (NullPointerException exception) {
+        } catch (Exception exception) {
             throw new UserValidationException("Invalid input");
         }
     }
@@ -71,7 +71,7 @@ public class UserValidation {
                 return matcher.matches();
             };
             return obj.validate(password);
-        } catch (NullPointerException exception) {
+        } catch (Exception exception) {
             throw new UserValidationException("Invalid input");
         }
     }
