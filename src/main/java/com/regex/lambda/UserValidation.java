@@ -61,7 +61,6 @@ public class UserValidation {
             throw new UserValidationException("Invalid input");
         }
     }
-
     public static boolean passwordValidation(String password) throws UserValidationException {
         try {
             UserValidate<String> obj = (ps) -> {
