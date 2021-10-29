@@ -24,7 +24,6 @@ public class UserValidationTest {
             Assert.assertEquals(actualResult, exception.message);
         }
     }
-
     @Test
     public void givenEmail_Validation() {
         UserValidation validation = new UserValidation();
